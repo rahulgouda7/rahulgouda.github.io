@@ -3,24 +3,25 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context";
 
 const Contact =() => {
-    const formRef = useRef();
+    const form = useRef();
     const [done,setDone] = useState(false)
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        emailjs.sendForm('service_dxn3vmt', 'template_mlh14ej', formRef.current, '9_H1aJRehTMF51DrP')
-      .then((result) => {
-          console.log(result.text);
-          setDone(true)
-      }, (error) => {
-          console.log(error.text);
-      });
+        emailjs.sendForm('service_dxn3vmt', 'template_eft544h', form.current, '9_H1aJRehTMF51DrP')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+        console.log("hit")
     }
 return (
     <div className="c">
@@ -48,7 +49,7 @@ return (
             <b>Whats your story?</b> Get in touch. Always available for
             freelancing if the right project comes along. me.
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
           <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
