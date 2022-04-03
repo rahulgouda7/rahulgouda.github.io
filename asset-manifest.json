@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rahulgouda.github.io/static/css/main.050fb293.chunk.css",
+    "main.js": "/rahulgouda.github.io/static/js/main.8763ae1e.chunk.js",
+    "main.js.map": "/rahulgouda.github.io/static/js/main.8763ae1e.chunk.js.map",
+    "runtime-main.js": "/rahulgouda.github.io/static/js/runtime-main.b4c641a4.js",
+    "runtime-main.js.map": "/rahulgouda.github.io/static/js/runtime-main.b4c641a4.js.map",
+    "static/js/2.ec798044.chunk.js": "/rahulgouda.github.io/static/js/2.ec798044.chunk.js",
+    "static/js/2.ec798044.chunk.js.map": "/rahulgouda.github.io/static/js/2.ec798044.chunk.js.map",
+    "index.html": "/rahulgouda.github.io/index.html",
+    "static/css/main.050fb293.chunk.css.map": "/rahulgouda.github.io/static/css/main.050fb293.chunk.css.map",
+    "static/js/2.ec798044.chunk.js.LICENSE.txt": "/rahulgouda.github.io/static/js/2.ec798044.chunk.js.LICENSE.txt",
+    "static/media/address.913a2318.png": "/rahulgouda.github.io/static/media/address.913a2318.png",
+    "static/media/award.5ff2dd79.png": "/rahulgouda.github.io/static/media/award.5ff2dd79.png",
+    "static/media/me.99d53922.png": "/rahulgouda.github.io/static/media/me.99d53922.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4c641a4.js",
+    "static/js/2.ec798044.chunk.js",
+    "static/css/main.050fb293.chunk.css",
+    "static/js/main.8763ae1e.chunk.js"
+  ]
+}
